@@ -1,0 +1,14 @@
+exploder:
+
+flags
+   -a        skip the ls readout and confirmation
+   -r        recursive
+   -s        silent (may clobber files at the parent directory level)
+   -v        verbose
+
+checks and safeguards
+  exploder checks to make sure that no file within a folder has the same name as the folder, as
+    this will cause an error when moving the file
+  maxFileCount
+    if the file count in the target folder is greater than the specified value, exploder will not
+      modify the directory or its children files
